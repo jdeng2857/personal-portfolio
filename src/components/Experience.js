@@ -8,6 +8,8 @@ import terraformImg from '../assets/img/technologies/terraform.png';
 import nginxImg from '../assets/img/technologies/nginx.png';
 import golangImg from '../assets/img/technologies/golang.png';
 
+import { ExperienceDescription } from "./ExperienceDescription";
+
 export const Experience = () => {
 
   const experience = [
