@@ -361,6 +361,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
 }
+
+.experience section {
+  margin-top: 30px;
+}
+
 .experience .kubernetes {
   height: var(--technology-img-height);
   width: 80px;
@@ -386,7 +391,64 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 140px;
   margin: 10px;
 }
-
+.experience .mysql {
+  height: var(--technology-img-height);
+  width: 140px;
+  margin: 10px;
+}
+.experience .datadog {
+  height: var(--technology-img-height);
+  width: var(--technology-img-height);
+  margin: 10px;
+}
+.experience .elasticsearch {
+  height: var(--technology-img-height);
+  width: var(--technology-img-height);
+  margin: 10px;
+}
+.experience .ruby {
+  height: var(--technology-img-height);
+  width: var(--technology-img-height);
+  margin: 10px;
+}
+.experience .graphql {
+  height: var(--technology-img-height);
+  width: var(--technology-img-height);
+  margin: 10px;
+}
+.experience .react {
+  height: var(--technology-img-height);
+  width: 90px;
+  margin: 10px;
+}
+.experience .typescript {
+  height: var(--technology-img-height);
+  width: var(--technology-img-height);
+  margin: 10px;
+}
+.experience .css {
+  height: var(--technology-img-height);
+  width: 64px;
+  margin: 10px;
+}
+.experience .wireshark {
+  height: var(--technology-img-height);
+  width: 300px;
+  margin: 10px;
+}
+.experience .bash {
+  height: var(--technology-img-height);
+  width: var(--technology-img-height);
+  margin: 10px;
+}
+.experience .linux {
+  height: var(--technology-img-height);
+  width: 64px;
+  margin: 10px;
+}
+.experience .experience_section {
+  margin-top: 50px;
+}
 
 /************ Projects Css ************/
 .project {
