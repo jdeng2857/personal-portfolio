@@ -11,18 +11,18 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Portfolio Site",
+      description: "The site you're on. Made with React.js and deployed on Vercel",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Bird Classifier",
+      description: "Categorizes bird images to one of over 500 species. Developed with Python using Flask and Tensorflow machine learning.",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Rust Multithread Web Server",
+      description: "Created CLI-based web server in Rust utilizing TCP sockets",
       imgUrl: projImg3,
     },
     {
