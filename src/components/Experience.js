@@ -52,9 +52,20 @@ export const Experience = () => {
     },
   ]
 
-  const images2 = [
+  const headings1 = {
+    title: "Shopify | Infrastructure Engineer Intern",
+    period: "Jan 2023 - Aug 2023",
+  }
 
+  const descriptions1 = [
+    "Developed HTTPS L7 routing infrastructure with Google Kubernetes Engine, involving updating custom NGINX" +
+    " middleware written in Lua, provisioning SSL certificates and firewall rules, traffic management, handling 20 million RPM.",
+    "Built observability tooling with Prometheus metrics and integrated request latency dashboards with alerts.",
+    "Implemented automated memory deletion for Kubernetes controller in Golang, reducing resources used.",
+    "Upgraded Kubernetes cluster fleet in Terraform with custom developer tools, improving infrastructure security.",
+    "Reduced latency between two major services by 75% using Kubernetes load testing.",
   ]
+  
 
   return (
     <section className="experience" id="experience">
@@ -65,30 +76,7 @@ export const Experience = () => {
               {({ isVisible }) =>
                 <section className={isVisible ? "animate__animated animate__fadeIn": ""}>
                   <h2>Experience</h2>
-                  <ExperienceSection images={images1}/>
-                  {/* <section className="experience_section">
-                    <section onClick={toggleExpanded}>
-                      <h3>Shopify | Infrastructure Engineer Intern</h3>
-                      <h4>Jan 2023 - Aug 2023</h4>
-                      <img className="kubernetes" src={kubernetesImg} alt="kubernetes"></img>
-                      <img className="gcp" src={gcpImg} alt="gcp"></img>
-                      <img className="terraform" src={terraformImg} alt="terraform"></img>
-                      <img className="nginx" src={nginxImg} alt="nginx"></img>
-                      <img className="golang" src={golangImg} alt="golang"></img>
-                    </section>
-                    {expanded && (
-                      <section>
-                        <p>Developed HTTPS L7 routing infrastructure with Google Kubernetes Engine, involving updating custom NGINX
-                          middleware written in Lua, provisioning SSL certificates and firewall rules, traffic management, handling 20 million RPM</p>
-                        <p>Built observability tooling with Prometheus metrics and integrated request latency dashboards with alerts</p>
-                        <p>Implemented automated memory deletion for Kubernetes controller in Golang, reducing resources used</p>
-                        <p>Upgraded Kubernetes cluster fleet in Terraform with custom developer tools, improving infrastructure security</p>
-                        <p>Reduced latency between two major services by 75% using Kubernetes load testing</p>
-                        <p>Skills: Kubernetes, Google Cloud Platform (GCP), Terraform, NGINX, Golang</p>
-                      </section>
-                    )}
-                  </section> */}
-
+                  <ExperienceSection images={images1} headings={headings1} descriptions={descriptions1}/>
                   <section className="experience_section">
                     <h3>Shopify | Backend Developer Intern</h3>
                     <h4>May 2022 - December 2022</h4>
