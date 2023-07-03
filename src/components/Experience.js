@@ -2,6 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import React, { useState } from 'react';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import ExperienceSection from "./ExperienceSection";
 
 import kubernetesImg from '../assets/img/technologies/kubernetes.png';
 import gcpImg from '../assets/img/technologies/gcp.png';
@@ -28,6 +29,33 @@ export const Experience = () => {
     setExpanded(!expanded);
   };
 
+  const images1 = [
+    {
+      classname: "kubernetes",
+      src: kubernetesImg,
+    },
+    {
+      classname: "gcp",
+      src: gcpImg,
+    },
+    {
+      classname: "terraform",
+      src: terraformImg,
+    },
+    {
+      classname: "nginx",
+      src: nginxImg,
+    },
+    {
+      classname: "golang",
+      src: golangImg,
+    },
+  ]
+
+  const images2 = [
+
+  ]
+
   return (
     <section className="experience" id="experience">
       <Container>
@@ -37,7 +65,8 @@ export const Experience = () => {
               {({ isVisible }) =>
                 <section className={isVisible ? "animate__animated animate__fadeIn": ""}>
                   <h2>Experience</h2>
-                  <section className="experience_section">
+                  <ExperienceSection images={images1}/>
+                  {/* <section className="experience_section">
                     <section onClick={toggleExpanded}>
                       <h3>Shopify | Infrastructure Engineer Intern</h3>
                       <h4>Jan 2023 - Aug 2023</h4>
@@ -58,7 +87,7 @@ export const Experience = () => {
                         <p>Skills: Kubernetes, Google Cloud Platform (GCP), Terraform, NGINX, Golang</p>
                       </section>
                     )}
-                  </section>
+                  </section> */}
 
                   <section className="experience_section">
                     <h3>Shopify | Backend Developer Intern</h3>
