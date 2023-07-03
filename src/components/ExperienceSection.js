@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
 
 const ExperienceSection = (props) => {
     const [expanded, setExpanded] = useState(false);
@@ -25,14 +26,22 @@ const ExperienceSection = (props) => {
         >
             <h3>{props.headings.title}</h3>
             <h4>{props.headings.period}</h4>
-            {props.images.map((image, index) => (
-            <img
-                key={index}
-                className={image.classname}
-                src={image.src}
-                alt={image.classname}
-            />
-            ))}
+
+            <section className="technologies_section">
+                {props.technologies?.map((technology, index) => (
+                    <Button variant="outline-light" className="technologies_button" key={index}>{technology}</Button>
+                ))}
+            </section>
+            <section className="images_section">
+                {props.images?.map((image, index) => (
+                <img
+                    key={index}
+                    className={image.classname}
+                    src={image.src}
+                    alt={image.classname}
+                />
+                ))}
+            </section>
           
             {expanded && (
                 <section className={`${expanded ? 'expanded' : ''}`}>
