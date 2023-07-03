@@ -29,7 +29,7 @@ export const Experience = () => {
     setExpanded(!expanded);
   };
 
-  const images1 = [
+  const images5 = [
     {
       classname: "kubernetes",
       src: kubernetesImg,
@@ -52,18 +52,154 @@ export const Experience = () => {
     },
   ]
 
-  const headings1 = {
+  const headings5 = {
     title: "Shopify | Infrastructure Engineer Intern",
     period: "Jan 2023 - Aug 2023",
   }
 
-  const descriptions1 = [
-    "Developed HTTPS L7 routing infrastructure with Google Kubernetes Engine, involving updating custom NGINX" +
+  const descriptions5 = [
+    "On the Edge Infrastructure team, developed HTTPS L7 routing infrastructure with Google Kubernetes Engine, involving updating custom NGINX" +
     " middleware written in Lua, provisioning SSL certificates and firewall rules, traffic management, handling 20 million RPM.",
     "Built observability tooling with Prometheus metrics and integrated request latency dashboards with alerts.",
     "Implemented automated memory deletion for Kubernetes controller in Golang, reducing resources used.",
     "Upgraded Kubernetes cluster fleet in Terraform with custom developer tools, improving infrastructure security.",
     "Reduced latency between two major services by 75% using Kubernetes load testing.",
+  ]
+
+  const experience_data = [
+    {
+      images: [
+        {
+          classname: "kubernetes",
+          src: kubernetesImg,
+        },
+        {
+          classname: "gcp",
+          src: gcpImg,
+        },
+        {
+          classname: "terraform",
+          src: terraformImg,
+        },
+        {
+          classname: "nginx",
+          src: nginxImg,
+        },
+        {
+          classname: "golang",
+          src: golangImg,
+        },
+      ],
+      headings: {
+        title: "Shopify | Infrastructure Engineer Intern",
+        period: "Jan 2023 - Aug 2023",
+      },
+      descriptions: [
+        "On the Edge Infrastructure team, developed HTTPS L7 routing infrastructure with Google Kubernetes Engine, involving updating custom NGINX" +
+        " middleware written in Lua, provisioning SSL certificates and firewall rules, traffic management, handling 20 million RPM.",
+        "Built observability tooling with Prometheus metrics and integrated request latency dashboards with alerts.",
+        "Implemented automated memory deletion for Kubernetes controller in Golang, reducing resources used.",
+        "Upgraded Kubernetes cluster fleet in Terraform with custom developer tools, improving infrastructure security.",
+        "Reduced latency between two major services by 75% using Kubernetes load testing.",
+      ],
+    },
+    {
+      images: [
+        {
+          classname: "graphql",
+          src: graphqlImg,
+        },
+        {
+          classname: "mysql",
+          src: mysqlImg,
+        },
+        {
+          classname: "elasticsearch",
+          src: elasticsearchImg,
+        },
+        {
+          classname: "ruby",
+          src: rubyImg,
+        },
+        {
+          classname: "datadog",
+          src: datadogImg,
+        },
+      ],
+      headings: {
+        title: "Shopify | Backend Developer Intern",
+        period: "May 2022 - Dec 2022",
+      },
+      descriptions: [
+        "Prepared project experiment to add a new server-driven section to the store screen of the Shop app, including"
+        +" developing Ruby data loader ingesting MySQL data into client-ready GraphQL APIs with Redis caching",
+        "Integrated Elasticsearch templates adding a new sort option for products, with over 2 million records",
+        "Added Datadog monitoring and alerts for key backend services with StatsD metrics",
+        "Championed project deep-dive into improving store section performance, discovering extraneous logic with distributed tracing in Observe and"
+        +" coordinated action items for the team, resulting in 10% average reduction in latency across all services",
+      ],
+    },
+    {
+      images: [
+        {
+          classname: "react",
+          src: reactImg,
+        },
+        {
+          classname: "typescript",
+          src: typescriptImg,
+        },
+        {
+          classname: "graphql",
+          src: graphqlImg,
+        },
+        {
+          classname: "ruby",
+          src: rubyImg,
+        },
+        {
+          classname: "css",
+          src: cssImg,
+        },
+      ],
+      headings: {
+        title: "Shopify | Software Engineer Intern",
+        period: "May 2021 - Apr 2022",
+      },
+      descriptions: [
+        "Prepared project experiment to add a new server-driven section to the store screen of the Shop app, including"
+        +" developing Ruby data loader ingesting MySQL data into client-ready GraphQL APIs with Redis caching",
+        "Integrated Elasticsearch templates adding a new sort option for products, with over 2 million records",
+        "Added Datadog monitoring and alerts for key backend services with StatsD metrics",
+        "Championed project deep-dive into improving store section performance, discovering extraneous logic with distributed tracing in Observe and"
+        +" coordinated action items for the team, resulting in 10% average reduction in latency across all services",
+      ],
+    },
+    {
+      images: [
+        {
+          classname: "bash",
+          src: bashImg,
+        },
+        {
+          classname: "wireshark",
+          src: wiresharkImg,
+        },
+        {
+          classname: "linux",
+          src: linuxImg,
+        },
+      ],
+      headings: {
+        title: "Nokia | Future Tech Intern",
+        period: "Jul 2019 - Aug 2019",
+      },
+      descriptions: [
+        "Analyzed network traffic with Wireshark to detect malware on mobile devices",
+        "Developed and shipped malware signatures into a system that blocks malignant requests",
+        "Learned the OSI model, TCP/IP, network security, bash, linux",
+      ],
+    },
   ]
   
 
@@ -76,78 +212,10 @@ export const Experience = () => {
               {({ isVisible }) =>
                 <section className={isVisible ? "animate__animated animate__fadeIn": ""}>
                   <h2>Experience</h2>
-                  <ExperienceSection images={images1} headings={headings1} descriptions={descriptions1}/>
-                  <section className="experience_section">
-                    <h3>Shopify | Backend Developer Intern</h3>
-                    <h4>May 2022 - December 2022</h4>
-                    <p>Prepared project experiment to add a new server-driven section to the store screen of the Shop app, including
-developing Ruby data loader ingesting MySQL data into client-ready GraphQL APIs with Redis caching</p>
-                    <p>Integrated Elasticsearch templates adding a new sort option for products, ingesting 2 million records</p>
-                    <p>Added monitoring to key backend services with StatsD metrics and linked metrics to Datadog monitors</p>
-                    <p>Championed project deep-dive into improving store section performance, discovering extraneous logic and
-coordinated action items for the team, resulting in 10% average reduction in latency across all services</p>  
-                    <p>Skills: GraphQL, MySQL, Elasticsearch, Ruby, DataDog</p>
-                    <img className="graphql" src={graphqlImg} alt="graphql"></img>
-                    <img className="mysql" src={mysqlImg} alt="mysql"></img>
-                    <img className="elasticsearch" src={elasticsearchImg} alt="elasticsearch"></img>
-                    <img className="ruby" src={rubyImg} alt="ruby"></img>
-                    <img className="datadog" src={datadogImg} alt='datadog"'></img>
-                  </section>
-
-                  <section className="experience_section">
-                    <h3>Shopify | Software Engineer Intern</h3>
-                    <h4>May 2021 - Apr 2022</h4>
-                    <p>Designed and integrated report editing buttons into a internal data platform website, creating
-                        React components, enabling archiving and locking reports for over 1000 developers and data scientists
-                    </p>
-                    <p>Fixed CSS styling errors, resulting in correct links and improved flex layout for superior user experience</p>
-                    <p>Developed Ruby GraphQL APIs to allow authenticated users to access restricted functionalities and datasets</p>
-                    <p>Owned pages of a major data discovery website revamp, drafting Figma designs, creating React components,
-transforming GraphQL queries with Typescript, resulting in improved UI navigation for over 4000 employees
-</p>
-                    
-                    <p>Skills: React, Typescript, GraphQL, Ruby, CSS</p>
-                    <img className="react" src={reactImg} alt="react"></img>
-                    <img className="typescript" src={typescriptImg} alt="typescript"></img>
-                    <img className="graphql" src={graphqlImg} alt="graphql"></img>
-                    <img className="ruby" src={rubyImg} alt="ruby"></img>
-                    <img className="css" src={cssImg} alt="css"></img>
-                  </section>
-
-                  <section className="experience_section">
-                    <h3>Shopify | Dev Degree Intern</h3>
-                    <h4>Sep 2020 - Apr 2021</h4>
-                    <p>Designed and integrated report editing buttons into a internal data platform website, creating
-                        React components, enabling archiving and locking reports for over 1000 developers and data scientists
-                    </p>
-                    <p>Fixed CSS styling errors, resulting in correct links and improved flex layout for superior user experience</p>
-                    <p>Developed Ruby GraphQL APIs to allow authenticated users to access restricted functionalities and datasets</p>
-                    <p>Owned pages of a major data discovery website revamp, drafting Figma designs, creating React components,
-transforming GraphQL queries with Typescript, resulting in improved UI navigation for over 4000 employees
-</p>
-                    
-                    <p>Skills: React, Typescript, GraphQL, Ruby, CSS</p>
-                    <img className="react" src={reactImg} alt="react"></img>
-                    <img className="typescript" src={typescriptImg} alt="typescript"></img>
-                    <img className="graphql" src={graphqlImg} alt="graphql"></img>
-                    <img className="ruby" src={rubyImg} alt="ruby"></img>
-                    <img className="css" src={cssImg} alt="css"></img>
-                  </section>
-
-                  <section className="experience_section">
-                    <h3>Nokia | Future Tech Intern</h3>
-                    <h4>Jul 2019 - Aug 2019</h4>
-                    <p>Analyzed network traffic with Wireshark to detect malware on android devices</p>
-                    <p>Developed and shipped malware signatures into a system that blocks malignant requests</p>
-                    <p>Learned fundamentals of the OSI model, TCP/IP, network security, bash, linux</p>
-                    
-                    <p>Skills: Bash, Wireshark, Linux </p>
-                    <img className="bash" src={bashImg} alt="bash"></img>
-                    <img className="wireshark" src={wiresharkImg} alt="wireshark"></img>
-                    <img className="linux" src={linuxImg} alt="linux"></img>
-                  </section>
+                  {experience_data.map((experience) => (
+                    <ExperienceSection images={experience.images} headings={experience.headings} descriptions={experience.descriptions}/>
+                  ))}
                 </section>
-                
               } 
             </TrackVisibility>
           </Col>

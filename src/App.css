@@ -346,7 +346,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .experience {
-  padding: 80px 0;
+  padding: 60px 0;
   position: relative;
   background-color: black;
 }
@@ -574,4 +574,41 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+/* Experience Section */
+/* .experience_section {
+  border: 1px solid;
+  border-color: gray;
+  padding: 10px;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+
+}
+
+.experience_section .subsection.hovered {
+  border-color: blue;
+}
+
+.experience_section.expanded {
+  border: 2px solid blue;
+} */
+
+/* .experience_section {
+  transition: border-color 0.3s;
+} */
+
+.experience_section.expanded {
+  border: 2px solid blue;
+}
+
+.experience_section{
+  border: 1px solid ;
+  padding: 10px;
+  transition: border-color 0.3s;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.experience_section.hovered {
+  border-color: blue;
 }

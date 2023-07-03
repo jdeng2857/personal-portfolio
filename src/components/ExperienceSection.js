@@ -17,13 +17,12 @@ const ExperienceSection = (props) => {
     };
 
     return (
-        <section className="experience_section">
-          <section
-            className={`subsection ${hovered ? 'hovered' : ''}`}
+        <section 
+            className={`experience_section ${hovered ? 'hovered' : ''}`}
             onClick={toggleExpanded}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-          >
+        >
             <h3>{props.headings.title}</h3>
             <h4>{props.headings.period}</h4>
             {props.images.map((image, index) => (
@@ -34,14 +33,14 @@ const ExperienceSection = (props) => {
                 alt={image.classname}
             />
             ))}
-          </section>
-          {expanded && (
-            <section>
-                {props.descriptions.map((description, index) => (
-                    <p key={index}>{description}</p>
-                ))}
-            </section>
-          )}
+          
+            {expanded && (
+                <section className={`${expanded ? 'expanded' : ''}`}>
+                    {props.descriptions.map((description, index) => (
+                        <p key={index}>{description}</p>
+                    ))}
+                </section>
+            )}
         </section>
     );
     
